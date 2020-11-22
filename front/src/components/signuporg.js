@@ -55,9 +55,14 @@ signup = (e)=>{
                            <p className="help-block text-danger"></p>
                          </div>
                         
+                        
                          <div className="form-group">
                            <input className="form-control" value= {this.state.phoneNumber} onChange={this.handleChangeInput}   name="phoneNumber" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number."/>
                            <p className="help-block text-danger"></p>
+                         </div>
+                         <div className="form-group">
+                           <input className="form-control" value= {this.state.location}  onChange={this.handleChangeInput}  name="location" id="name" type="text" placeholder="Your Locationn  *" required="required" data-validation-required-message="Please enter your Locaton."/>
+                   <p className="help-block text-danger"></p>
                          </div>
                          
             
@@ -72,10 +77,7 @@ signup = (e)=>{
                            <p className="help-block text-danger"></p>
                          </div>
 
-                         <div className="form-group">
-                           <input className="form-control" value= {this.state.location}  onChange={this.handleChangeInput}  name="location" id="name" type="text" placeholder="Your Locationn  *" required="required" data-validation-required-message="Please enter your Locaton."/>
-                   <p className="help-block text-danger"></p>
-                         </div>
+                     
              
                        </div>
                        
