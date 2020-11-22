@@ -15,6 +15,8 @@ const clientSchema = joi.object({
   location: joi.string().required(),
   phoneNumber: joi.string().min(6).required(),
 });
+//this schema to validate data from the client before login to his page  
+
 const loginSchema = joi.object({
   email: joi.string().min(6).required().email(),
   password: joi.string().min(6).required(),
